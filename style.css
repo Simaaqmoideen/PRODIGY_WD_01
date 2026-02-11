@@ -1,0 +1,45 @@
+/* Base Navbar Styles */
+.logo{
+  font-size: 40px;
+}
+
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: blue; /* Initial state */
+  transition: all 0.4s ease;
+  z-index: 1000;
+}
+
+/* Style for when the user scrolls (added via JS) */
+#navbar.scrolled {
+  background-color: #2d3436;
+  padding: 10px 50px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  color: white;
+}
+
+/* Menu Items & Hover Effects */
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* Hover Interactivity */
+.nav-links li a:hover {
+  color: #fab1a0; /* Changes color on hover */
+}
